@@ -1,79 +1,188 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.E. BATIMENT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>OU RASINA</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header, footer { background: #1f2937; color: white; text-align: center; padding: 30px; }
-    nav a { color: #fbbf24; margin: 0 12px; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
-    h2 { color: #1f2937; margin-bottom: 20px; font-size: 2.4em; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
     }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+    header {
+      background: linear-gradient(to right, #222, #4e54c8);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .intro {
+      background: #e7ecff;
+      padding: 30px;
+      text-align: center;
+      color: #1e2a78;
+      font-size: 17px;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    .part {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+    .card {
+      background: white;
+      border: 2px solid #4e54c8;
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card h3 {
+      font-size: 16px;
+      color: #4e54c8;
+      margin: 10px 0 5px;
+    }
+    .card p {
+      font-size: 13px;
+      color: #444;
+      padding: 0 10px 15px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>V.E. BATIMENT</h1>
-  <nav>
-    <a href="#about">Présentation</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="#map">Adresse</a>
-  </nav>
-</header>
+  <header>
+    <h1>OU RASINA</h1>
+    <p>contact@ourasina.shop | +37258527024</p>
+  </header>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>Basée à Les Mureaux, V.E. BATIMENT est une entreprise spécialisée dans la maçonnerie générale et les gros travaux de construction. Grâce à une équipe qualifiée, nous réalisons des chantiers sur mesure en respectant les normes de qualité et de sécurité.</p>
-</section>
-
-<section id="services">
-  <h2>Nos Services</h2>
-  <p>Gros œuvre de bâtiment, travaux de maçonnerie, fondations, rénovation structurelle, et accompagnement personnalisé pour tous vos projets de construction.</p>
-</section>
-
-<section id="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1570126681032-3a7c41f13b0d?auto=format&fit=crop&w=800&q=80" alt="chantier 1">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="chantier 2">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="chantier 3">
+  <div class="intro">
+    OU RASINA est une entreprise innovante spécialisée dans les solutions modernes et durables, fournissant des services et des produits adaptés aux besoins évolutifs des clients en Europe et au-delà.
   </div>
-</section>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p>Email : contact@vebatiment.shop</p>
-  <p>Téléphone : +33 6 05 99 64 90</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+  <section class="part">
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=d2eebc2f4275eeaf8f2c0f31d1e25a1916f84561-5210178-images-thumbs&n=13" alt="Image 1">
+      <h3>Solution A</h3>
+      <p>Service fiable pour les besoins quotidiens.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=eb2547b144f2f79b47f25a245b2d00f0bd9601fa-12514612-images-thumbs&n=13" alt="Image 2">
+      <h3>Solution B</h3>
+      <p>Technologies avancées au service du futur.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=bbf65d4a058fe93f58d8a485fbf5e455c7566c74-5603028-images-thumbs&n=13" alt="Image 3">
+      <h3>Solution C</h3>
+      <p>Écologie et innovation pour la planète.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=647f4d83468004f6948a92fa3de975d39d48ed4f-12799296-images-thumbs&n=13" alt="Image 4">
+      <h3>Solution D</h3>
+      <p>Optimisation de vos ressources et services.</p>
+    </div>
+  </section>
 
-<section id="map">
-  <h2>Adresse</h2>
-  <p>66 Avenue du Maréchal Foch, 78130 Les Mureaux, France</p>
-  <iframe src="https://www.google.com/maps?q=66+Avenue+du+Mar%C3%A9chal+Foch,+Les+Mureaux,+France&output=embed" allowfullscreen loading="lazy"></iframe>
-</section>
+  <section class="part">
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=eb2547b144f2f79b47f25a245b2d00f0bd9601fa-12514612-images-thumbs&n=13" alt="Image 5">
+      <h3>Solution E</h3>
+      <p>Services numériques pour entreprises modernes.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=bbf65d4a058fe93f58d8a485fbf5e455c7566c74-5603028-images-thumbs&n=13" alt="Image 6">
+      <h3>Solution F</h3>
+      <p>Applications pratiques à haut rendement.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=647f4d83468004f6948a92fa3de975d39d48ed4f-12799296-images-thumbs&n=13" alt="Image 7">
+      <h3>Solution G</h3>
+      <p>Mobilité et accessibilité pour tous.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=d2eebc2f4275eeaf8f2c0f31d1e25a1916f84561-5210178-images-thumbs&n=13" alt="Image 8">
+      <h3>Solution H</h3>
+      <p>Plateformes intuitives et performantes.</p>
+    </div>
+  </section>
 
-<footer>
-  &copy; 2025 V.E. BATIMENT — Tous droits réservés
-</footer>
+  <section class="part">
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=bbf65d4a058fe93f58d8a485fbf5e455c7566c74-5603028-images-thumbs&n=13" alt="Image 9">
+      <h3>Solution I</h3>
+      <p>Des résultats concrets pour vos projets.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=647f4d83468004f6948a92fa3de975d39d48ed4f-12799296-images-thumbs&n=13" alt="Image 10">
+      <h3>Solution J</h3>
+      <p>Infrastructures modernes et adaptées.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=eb2547b144f2f79b47f25a245b2d00f0bd9601fa-12514612-images-thumbs&n=13" alt="Image 11">
+      <h3>Solution K</h3>
+      <p>Communication fluide et dynamique.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=d2eebc2f4275eeaf8f2c0f31d1e25a1916f84561-5210178-images-thumbs&n=13" alt="Image 12">
+      <h3>Solution L</h3>
+      <p>Ressources numériques simplifiées.</p>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=647f4d83468004f6948a92fa3de975d39d48ed4f-12799296-images-thumbs&n=13" alt="Image 13">
+      <h3>Solution M</h3>
+      <p>Gestion intelligente des processus métiers.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=d2eebc2f4275eeaf8f2c0f31d1e25a1916f84561-5210178-images-thumbs&n=13" alt="Image 14">
+      <h3>Solution N</h3>
+      <p>Outils digitaux à la pointe de la technologie.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=eb2547b144f2f79b47f25a245b2d00f0bd9601fa-12514612-images-thumbs&n=13" alt="Image 15">
+      <h3>Solution O</h3>
+      <p>Stratégies personnalisées pour chaque client.</p>
+    </div>
+    <div class="card">
+      <img src="https://avatars.mds.yandex.net/i?id=bbf65d4a058fe93f58d8a485fbf5e455c7566c74-5603028-images-thumbs&n=13" alt="Image 16">
+      <h3>Solution P</h3>
+      <p>Optimisation du workflow numérique.</p>
+    </div>
+  </section>
+
+  <footer>
+    📍 Basée en Estonie<br>
+    &copy; 2025 OU RASINA — Tous droits réservés.
+  </footer>
 
 </body>
 </html>
